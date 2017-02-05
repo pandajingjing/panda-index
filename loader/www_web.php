@@ -1,6 +1,7 @@
 <?php
 $G_PHP_DIR = array(
     PANDA_CODEPATH . '/www-web',
+    PANDA_CODEPATH . '/www-service',
     PANDA_CODEPATH . '/system'
 );
 
