@@ -22,7 +22,7 @@ function getLoaderParams()
  */
 function getLoaderName($p_aLoaderParams)
 {
-    return isset($p_aLoaderParams[1]) ? $p_aLoaderParams[1] : '';
+    return isset($p_aLoaderParams[2]) ? $p_aLoaderParams[2] : '';
 }
 
 /**

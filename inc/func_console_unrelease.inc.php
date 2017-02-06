@@ -11,5 +11,5 @@
  */
 function getCodeVer($p_aLoaderParams)
 {
-    return $p_aLoaderParams[2];
+    return isset($p_aLoaderParams[3])?$p_aLoaderParams[3]:'';
 }
