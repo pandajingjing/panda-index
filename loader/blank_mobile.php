@@ -15,6 +15,7 @@ $G_CONFIG_DIR = array(
 );
 
 $G_PAGE_DIR = array(
+    PANDA_PAGEPATH . '/blank-mobile',
     PANDA_PAGEPATH . '/system'
 );
 

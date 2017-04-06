@@ -15,4 +15,4 @@ $G_CONFIG_DIR = array(
 );
 
 include PANDA_CODEPATH . '/system/bin.php';
-bin(false);
+bin_cmd();
