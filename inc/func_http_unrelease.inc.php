@@ -6,7 +6,7 @@
 
 /**
  * 获取代码版本
- * 
+ *
  * @param array $p_aLoaderParams            
  * @param int $p_iParamsLength            
  * @param int $p_iPosition            

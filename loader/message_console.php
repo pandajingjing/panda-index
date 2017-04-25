@@ -11,6 +11,8 @@ $G_CONFIG_DIR = array(
     PANDA_CODEPATH . '/message-service/config',
     PANDA_CODEPATH . '/message-bclient/config',
     PANDA_CODEPATH . '/message-console/config',
+    PANDA_CODEPATH . '/config/message-service',
+    PANDA_CODEPATH . '/config/message-bclient',
     PANDA_CODEPATH . '/config/message-console'
 );
 

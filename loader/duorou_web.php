@@ -11,6 +11,8 @@ $G_CONFIG_DIR = array(
     PANDA_CODEPATH . '/duorou-service/config',
     PANDA_CODEPATH . '/duorou-bclient/config',
     PANDA_CODEPATH . '/duorou-web/config',
+    PANDA_CODEPATH . '/config/duorou-service',
+    PANDA_CODEPATH . '/config/duorou-bclient',
     PANDA_CODEPATH . '/config/duorou-web'
 );
 

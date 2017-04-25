@@ -15,6 +15,10 @@ $G_CONFIG_DIR = array(
     PANDA_CODEPATH . '/file-service/config',
     PANDA_CODEPATH . '/file-bclient/config',
     PANDA_CODEPATH . '/file-web/config',
+    PANDA_CODEPATH . '/config/storage-service',
+    PANDA_CODEPATH . '/config/storage-bclient',
+    PANDA_CODEPATH . '/config/file-service',
+    PANDA_CODEPATH . '/config/file-bclient',
     PANDA_CODEPATH . '/config/file-web'
 );
 

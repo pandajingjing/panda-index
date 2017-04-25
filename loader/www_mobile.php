@@ -11,6 +11,8 @@ $G_CONFIG_DIR = array(
     PANDA_CODEPATH . '/www-service/config',
     PANDA_CODEPATH . '/www-bclient/config',
     PANDA_CODEPATH . '/www-mobile/config',
+    PANDA_CODEPATH . '/config/www-service',
+    PANDA_CODEPATH . '/config/www-bclient',
     PANDA_CODEPATH . '/config/www-mobile'
 );
 
