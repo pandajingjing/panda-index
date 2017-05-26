@@ -45,7 +45,7 @@ function getLoaderName($p_aLoaderParams, $p_iParamsLength, $p_iPosition)
  */
 function getCodePath($p_sCodeVer)
 {
-    $sCodePath = PANDA_BASEPATH . '/php_' . PANDA_ENV_NAME . '/' . $p_sCodeVer;
+    $sCodePath = PANDA_BASEPATH . '/php-' . PANDA_ENV_NAME . '/' . $p_sCodeVer;
     if (is_dir($sCodePath)) {
         return $sCodePath;
     } else {
@@ -65,7 +65,7 @@ function getCodePath($p_sCodeVer)
  */
 function getPagePath($p_sPageVer)
 {
-    $sPagePath = PANDA_BASEPATH . '/page_' . PANDA_ENV_NAME . '/' . $p_sPageVer;
+    $sPagePath = PANDA_BASEPATH . '/page-' . PANDA_ENV_NAME . '/' . $p_sPageVer;
     if (is_dir($sPagePath)) {
         return $sPagePath;
     } else {

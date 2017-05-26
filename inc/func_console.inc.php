@@ -35,7 +35,7 @@ function getLoaderName($p_aLoaderParams)
  */
 function getCodePath($p_sBranchName)
 {
-    $sCodePath = PANDA_BASEPATH . '/php_' . PANDA_ENV_NAME . '/' . $p_sBranchName;
+    $sCodePath = PANDA_BASEPATH . '/php-' . PANDA_ENV_NAME . '/' . $p_sBranchName;
     if (is_dir($sCodePath)) {
         return $sCodePath;
     } else {
