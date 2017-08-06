@@ -1,7 +1,6 @@
 <?php
-/**
- * 运行环境根目录
- */
+namespace PandaIndex;
+
 define('PANDA_BASEPATH', '/data/app');
 include PANDA_BASEPATH . '/index/inc/func.inc.php';
 
@@ -13,7 +12,8 @@ include PANDA_BASEPATH . '/index/inc/func_' . PANDA_REQUEST_TYPE . '_' . PANDA_E
 $aLoaderParams = getLoaderParams();
 
 define('PANDA_LOADER', getLoaderName($aLoaderParams));
-define('PANDA_CODEPATH', getCodePath($aLoaderParams));
+define('PANDA_CODE_VER', getCodeVer());
+define('PANDA_CODEPATH', getCodePath(PANDA_CODE_VER));
 define('PANDA_BASECMD', getBaseCmd());
 include getLoaderPath($aLoaderParams);
 exit();

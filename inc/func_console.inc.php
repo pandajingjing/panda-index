@@ -1,4 +1,5 @@
 <?php
+namespace PandaIndex;
 
 /**
  * 命令行通用函数

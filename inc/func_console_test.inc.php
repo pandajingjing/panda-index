@@ -1,4 +1,6 @@
 <?php
+namespace PandaIndex;
+
 /**
  * 命令行测试环境通用函数
  */

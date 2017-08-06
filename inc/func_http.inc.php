@@ -1,4 +1,5 @@
 <?php
+namespace PandaIndex;
 
 /**
  * http站点通用函数

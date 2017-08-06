@@ -1,4 +1,6 @@
 <?php
+namespace PandaIndex;
+
 /**
  * service站点线上环境函数
  */

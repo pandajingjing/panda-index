@@ -1,4 +1,6 @@
 <?php
+namespace PandaIndex;
+
 /**
  * 定义运行环境的常量
  */

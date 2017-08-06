@@ -1,4 +1,5 @@
 <?php
+namespace PandaIndex;
 
 /**
  * web站点线下环境函数

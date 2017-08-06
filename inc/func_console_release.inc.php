@@ -1,8 +1,10 @@
 <?php
+namespace PandaIndex;
 
 /**
  * 命令行线上环境通用函数
  */
+include PANDA_BASEPATH . '/index/inc/func_' . PANDA_REQUEST_TYPE . '.inc.php';
 
 /**
  * 获取代码版本
