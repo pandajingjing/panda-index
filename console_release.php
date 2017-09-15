@@ -10,10 +10,10 @@ define('PANDA_REQUEST_TYPE', PANDA_REQTYPE_CONSOLE);
 include PANDA_BASEPATH . '/index/inc/func_' . PANDA_REQUEST_TYPE . '_' . PANDA_ENV_NAME . '.inc.php';
 
 $aLoaderParams = getLoaderParams();
+$iParamsLength = count($aLoaderParams);
 
-define('PANDA_LOADER', getLoaderName($aLoaderParams));
-define('PANDA_CODE_VER', getCodeVer());
-define('PANDA_CODEPATH', getCodePath(PANDA_CODE_VER));
-define('PANDA_BASECMD', getBaseCmd());
-include getLoaderPath($aLoaderParams);
+define('PANDA_LOADER', getLoaderName($aLoaderParams, $iParamsLength, - 1));
+define('PANDA_CODEPATH', getCodePath(PANDA_BASEPATH, PANDA_ENV_NAME, getCodeVer(PANDA_BASEPATH, PANDA_LOADER, PANDA_REQUEST_TYPE)));
+define('PANDA_BASECMD', getBaseCmd(PANDA_ENV_NAME));
+echo getLoaderPath(PANDA_BASEPATH, PANDA_LOADER, PANDA_REQUEST_TYPE);
 exit();

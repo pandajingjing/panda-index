@@ -10,13 +10,10 @@ define('PANDA_REQUEST_TYPE', PANDA_REQTYPE_MOBILE);
 include PANDA_BASEPATH . '/index/inc/func_' . PANDA_REQUEST_TYPE . '_' . PANDA_ENV_NAME . '.inc.php';
 
 $aLoaderParams = getLoaderParams();
-$iParamsLength = count($aLoaderParams);
 
-define('PANDA_LOADER', getLoaderName($aLoaderParams, $iParamsLength, 6));
-define('PANDA_CODE_VER', getCodeVer());
-define('PANDA_PAGE_VER', getPageVer());
-define('PANDA_CODEPATH', getCodePath(PANDA_CODE_VER));
-define('PANDA_PAGEPATH', getPagePath(PANDA_PAGE_VER));
-define('PANDA_BASEDOMAIN', getBaseDomain($aLoaderParams, $iParamsLength));
-include getLoaderPath($aLoaderParams, $iParamsLength);
+define('PANDA_LOADER', getLoaderName($aLoaderParams, 0));
+define('PANDA_CODEPATH', getCodePath(PANDA_BASEPATH, PANDA_ENV_NAME, getCodeVer(PANDA_BASEPATH, PANDA_LOADER, PANDA_REQUEST_TYPE)));
+define('PANDA_PAGEPATH', getPagePath(PANDA_BASEPATH, PANDA_ENV_NAME, getPageVer(PANDA_BASEPATH, PANDA_LOADER, PANDA_REQUEST_TYPE)));
+define('PANDA_BASEDOMAIN', getBaseDomain($aLoaderParams, 1));
+// echo getLoaderPath(PANDA_BASEPATH, PANDA_LOADER, PANDA_REQUEST_TYPE);
 exit();

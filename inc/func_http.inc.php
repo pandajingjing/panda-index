@@ -18,21 +18,18 @@ function getLoaderParams()
 /**
  * 获取加载器名称
  *
- * 如果无法获取则跳转到www频道
+ * 如果无法获取则返回www
  *
  * @param array $p_aLoaderParams            
- * @param int $p_iParamsLength            
  * @param int $p_iPosition            
  * @return string
  */
-function getLoaderName($p_aLoaderParams, $p_iParamsLength, $p_iPosition)
+function getLoaderName($p_aLoaderParams, $p_iPosition)
 {
-    $iPosition = $p_iParamsLength - $p_iPosition;
-    if (isset($p_aLoaderParams[$iPosition])) {
-        return $p_aLoaderParams[$iPosition];
+    if (isset($p_aLoaderParams[$p_iPosition])) {
+        return $p_aLoaderParams[$p_iPosition];
     } else {
-        header('Location: http://www.' . getBaseDomain($p_aLoaderParams, $p_iParamsLength), true, 302);
-        exit();
+        return 'www';
     }
 }
 
@@ -41,12 +38,14 @@ function getLoaderName($p_aLoaderParams, $p_iParamsLength, $p_iPosition)
  *
  * 如果路径不存在则返回404错误
  *
+ * @param string $p_sBasePath            
+ * @param string $p_sEnvName            
  * @param string $p_sCodeVer            
  * @return string
  */
-function getCodePath($p_sCodeVer)
+function getCodePath($p_sBasePath, $p_sEnvName, $p_sCodeVer)
 {
-    $sCodePath = PANDA_BASEPATH . '/php-' . PANDA_ENV_NAME . '/' . $p_sCodeVer;
+    $sCodePath = $p_sBasePath . '/php-' . $p_sEnvName . '/' . $p_sCodeVer;
     if (is_dir($sCodePath)) {
         return $sCodePath;
     } else {
@@ -61,12 +60,14 @@ function getCodePath($p_sCodeVer)
  *
  * 如果路径不存在则返回404错误
  *
+ * @param string $p_sBasePath            
+ * @param string $p_sEnvName            
  * @param string $p_sPageVer            
  * @return string
  */
-function getPagePath($p_sPageVer)
+function getPagePath($p_sBasePath, $p_sEnvName, $p_sPageVer)
 {
-    $sPagePath = PANDA_BASEPATH . '/page-' . PANDA_ENV_NAME . '/' . $p_sPageVer;
+    $sPagePath = $p_sBasePath . '/page-' . $p_sEnvName . '/' . $p_sPageVer;
     if (is_dir($sPagePath)) {
         return $sPagePath;
     } else {
@@ -79,20 +80,33 @@ function getPagePath($p_sPageVer)
 /**
  * 获取加载器路径
  *
- * 如果加载器不存在则未发布环境前往www域名
- * 发布环境需要检查开放了对应的子域名解析为何开启
+ * 如果加载器不存在则返回404错误
  *
- * @param array $p_aLoaderParams            
- * @param int $p_iParamsLength            
+ * @param string $p_sBasePath            
+ * @param string $p_sLoaderName            
+ * @param string $p_sReqType            
  * @return string
  */
-function getLoaderPath($p_aLoaderParams, $p_iParamsLength)
+function getLoaderPath($p_sBasePath, $p_sLoaderName, $p_sReqType)
 {
-    $sLoaderPath = PANDA_BASEPATH . '/index/loader/' . PANDA_LOADER . '_' . PANDA_REQUEST_TYPE . '.php';
+    $sLoaderPath = $p_sBasePath . '/index/loader/' . $p_sLoaderName . '_' . $p_sReqType . '.php';
     if (file_exists($sLoaderPath)) {
         return $sLoaderPath;
     } else {
-        header('Location: http://www.' . getBaseDomain($p_aLoaderParams, $p_iParamsLength), true, 302);
+        header('HTTP/1.0 404 Not Found');
+        header('Error-Tag:Loader Path Not Found');
         exit();
     }
+}
+
+/**
+ * 获取基础域名
+ *
+ * @param array $p_aLoaderParams
+ * @param int $p_iPosition
+ * @return string
+ */
+function getBaseDomain($p_aLoaderParams, $p_iPosition)
+{
+    return join('.', array_slice($p_aLoaderParams, $p_iPosition));
 }
