@@ -15,5 +15,5 @@ $iParamsLength = count($aLoaderParams);
 define('PANDA_LOADER', getLoaderName($aLoaderParams, $iParamsLength, - 2));
 define('PANDA_CODEPATH', getCodePath(PANDA_BASEPATH, PANDA_ENV_NAME, getCodeVer($aLoaderParams, $iParamsLength, - 1)));
 define('PANDA_BASECMD', getBaseCmd(PANDA_ENV_NAME));
-echo getLoaderPath(PANDA_BASEPATH, PANDA_LOADER, PANDA_REQUEST_TYPE);
+include getLoaderPath(PANDA_BASEPATH, PANDA_LOADER, PANDA_REQUEST_TYPE);
 exit();

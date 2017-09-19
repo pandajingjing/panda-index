@@ -1,4 +1,6 @@
 <?php
+namespace PandaIndex;
+
 $G_PHP_DIR = array(
     PANDA_CODEPATH . '/blank-web',
     PANDA_CODEPATH . '/blank-bclient',
@@ -22,4 +24,4 @@ $G_PAGE_DIR = array(
 );
 
 include PANDA_CODEPATH . '/system/bin.php';
-bin();
+\panda\bin();

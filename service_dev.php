@@ -15,5 +15,5 @@ define('PANDA_LOADER', getLoaderName($aLoaderParams, 0));
 define('PANDA_CODEPATH', getCodePath(PANDA_BASEPATH, PANDA_ENV_NAME, getCodeVer($aLoaderParams, 1)));
 define('PANDA_PAGEPATH', getPagePath(PANDA_BASEPATH, PANDA_ENV_NAME, getPageVer($aLoaderParams, 1)));
 define('PANDA_BASEDOMAIN', getBaseDomain($aLoaderParams, 1));
-echo getLoaderPath(PANDA_BASEPATH, PANDA_LOADER, PANDA_REQUEST_TYPE);
+include getLoaderPath(PANDA_BASEPATH, PANDA_LOADER, PANDA_REQUEST_TYPE);
 exit();
