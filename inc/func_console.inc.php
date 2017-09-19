@@ -87,3 +87,15 @@ function getCodePath($p_sBasePath, $p_sEnvName, $p_sCodeVer)
         exit();
     }
 }
+
+/**
+ * 获取Vendor路径
+ *
+ * @param string $p_sBasePath            
+ * @param string $p_sEnvName            
+ * @return string
+ */
+function getVendorPath($p_sBasePath, $p_sEnvName)
+{
+    return $p_sBasePath . '/php-' . $p_sEnvName . '/vendor';
+}

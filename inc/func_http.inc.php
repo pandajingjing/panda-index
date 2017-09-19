@@ -102,11 +102,23 @@ function getLoaderPath($p_sBasePath, $p_sLoaderName, $p_sReqType)
 /**
  * 获取基础域名
  *
- * @param array $p_aLoaderParams
- * @param int $p_iPosition
+ * @param array $p_aLoaderParams            
+ * @param int $p_iPosition            
  * @return string
  */
 function getBaseDomain($p_aLoaderParams, $p_iPosition)
 {
     return join('.', array_slice($p_aLoaderParams, $p_iPosition));
+}
+
+/**
+ * 获取Vendor路径
+ *
+ * @param string $p_sBasePath            
+ * @param string $p_sEnvName            
+ * @return string
+ */
+function getVendorPath($p_sBasePath, $p_sEnvName)
+{
+    return $p_sBasePath . '/php-' . $p_sEnvName . '/vendor';
 }

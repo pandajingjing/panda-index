@@ -1,7 +1,7 @@
 <?php
 namespace PandaIndex;
 
-$G_PHP_DIR = array(
+$G_APP_DIR = array(
     PANDA_CODEPATH . '/blank-web',
     PANDA_CODEPATH . '/blank-bclient',
     PANDA_CODEPATH . '/blank-service',
