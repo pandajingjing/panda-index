@@ -120,5 +120,5 @@ function getBaseDomain($p_aLoaderParams, $p_iPosition)
  */
 function getVendorPath($p_sBasePath, $p_sEnvName)
 {
-    return $p_sBasePath . '/php-' . $p_sEnvName . '/vendor';
+    return $p_sBasePath . '/php-' . $p_sEnvName . '/kernel/vendor';
 }

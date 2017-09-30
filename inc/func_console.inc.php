@@ -97,5 +97,5 @@ function getCodePath($p_sBasePath, $p_sEnvName, $p_sCodeVer)
  */
 function getVendorPath($p_sBasePath, $p_sEnvName)
 {
-    return $p_sBasePath . '/php-' . $p_sEnvName . '/vendor';
+    return $p_sBasePath . '/php-' . $p_sEnvName . '/kernel/vendor';
 }

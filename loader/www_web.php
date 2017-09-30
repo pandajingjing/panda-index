@@ -1,9 +1,11 @@
 <?php
-$G_PHP_DIR = array(
-    PANDA_CODEPATH . '/www-web',
-    PANDA_CODEPATH . '/www-bclient',
-    PANDA_CODEPATH . '/www-service',
-    PANDA_CODEPATH . '/system'
+namespace PandaIndex;
+
+$G_APP_DIR = array(
+    'app\\' => PANDA_CODEPATH . '/www-web',
+    'www-bclient\\' => PANDA_CODEPATH . '/www-bclient',
+    'www-service\\' => PANDA_CODEPATH . '/www-service',
+    'panda\\' => PANDA_CODEPATH . '/system'
 );
 
 $G_CONFIG_DIR = array(

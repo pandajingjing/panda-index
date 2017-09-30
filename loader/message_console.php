@@ -1,9 +1,11 @@
 <?php
-$G_PHP_DIR = array(
-    PANDA_CODEPATH . '/message-console',
-    PANDA_CODEPATH . '/message-bclient',
-    PANDA_CODEPATH . '/message-service',
-    PANDA_CODEPATH . '/system'
+namespace PandaIndex;
+
+$G_APP_DIR = array(
+    'app\\' => PANDA_CODEPATH . '/message-console',
+    'message-bclient\\' => PANDA_CODEPATH . '/message-bclient',
+    'message-service\\' => PANDA_CODEPATH . '/message-service',
+    'system\\' => PANDA_CODEPATH . '/system'
 );
 
 $G_CONFIG_DIR = array(

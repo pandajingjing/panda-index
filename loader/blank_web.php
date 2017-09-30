@@ -2,10 +2,10 @@
 namespace PandaIndex;
 
 $G_APP_DIR = array(
-    PANDA_CODEPATH . '/blank-web',
-    PANDA_CODEPATH . '/blank-bclient',
-    PANDA_CODEPATH . '/blank-service',
-    PANDA_CODEPATH . '/system'
+    'app\\' => PANDA_CODEPATH . '/blank-web',
+    'blank-bclient\\' => PANDA_CODEPATH . '/blank-bclient',
+    'blank-service\\' => PANDA_CODEPATH . '/blank-service',
+    'panda\\' => PANDA_CODEPATH . '/system'
 );
 
 $G_CONFIG_DIR = array(
@@ -24,4 +24,4 @@ $G_PAGE_DIR = array(
 );
 
 include PANDA_CODEPATH . '/system/bin.php';
-\panda\bin();
+bin();

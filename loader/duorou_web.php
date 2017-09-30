@@ -1,9 +1,11 @@
 <?php
-$G_PHP_DIR = array(
-    PANDA_CODEPATH . '/duorou-web',
-    PANDA_CODEPATH . '/duorou-bclient',
-    PANDA_CODEPATH . '/duorou-service',
-    PANDA_CODEPATH . '/system'
+namespace PandaIndex;
+
+$G_APP_DIR = array(
+    'app\\' => PANDA_CODEPATH . '/duorou-web',
+    'duorou-bclient\\' => PANDA_CODEPATH . '/duorou-bclient',
+    'duorou-service\\' => PANDA_CODEPATH . '/duorou-service',
+    'panda\\' => PANDA_CODEPATH . '/system'
 );
 
 $G_CONFIG_DIR = array(

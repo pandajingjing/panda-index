@@ -1,11 +1,13 @@
 <?php
-$G_PHP_DIR = array(
-    PANDA_CODEPATH . '/file-web',
-    PANDA_CODEPATH . '/file-bclient',
-    PANDA_CODEPATH . '/file-service',
-    PANDA_CODEPATH . '/storage-bclient',
-    PANDA_CODEPATH . '/storage-service',
-    PANDA_CODEPATH . '/system'
+namespace PandaIndex;
+
+$G_APP_DIR = array(
+    'app\\' => PANDA_CODEPATH . '/file-web',
+    'file-bclient\\' => PANDA_CODEPATH . '/file-bclient',
+    'file-service\\' => PANDA_CODEPATH . '/file-service',
+    'storage-bclient\\' => PANDA_CODEPATH . '/storage-bclient',
+    'storage-service\\' => PANDA_CODEPATH . '/storage-service',
+    'panda\\' => PANDA_CODEPATH . '/system'
 );
 
 $G_CONFIG_DIR = array(
