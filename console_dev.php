@@ -1,4 +1,5 @@
 <?php
+// ./launcher_dev.sh uri loader codever
 namespace PandaIndex;
 
 define('PANDA_BASEPATH', '/data/app');
