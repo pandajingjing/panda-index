@@ -3,7 +3,6 @@ namespace PandaIndex;
 
 $G_APP_DIR = array(
     'app\\' => PANDA_CODEPATH . '/duorou-web',
-    'duorou-bclient\\' => PANDA_CODEPATH . '/duorou-bclient',
     'duorou-service\\' => PANDA_CODEPATH . '/duorou-service',
     'panda\\' => PANDA_CODEPATH . '/system'
 );
@@ -11,10 +10,8 @@ $G_APP_DIR = array(
 $G_CONFIG_DIR = array(
     PANDA_CODEPATH . '/system/config',
     PANDA_CODEPATH . '/duorou-service/config',
-    PANDA_CODEPATH . '/duorou-bclient/config',
     PANDA_CODEPATH . '/duorou-web/config',
     PANDA_CODEPATH . '/config/duorou-service',
-    PANDA_CODEPATH . '/config/duorou-bclient',
     PANDA_CODEPATH . '/config/duorou-web'
 );
 
