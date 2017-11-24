@@ -2,21 +2,21 @@
 namespace PandaIndex;
 
 $G_APP_DIR = array(
-    'app\\' => PANDA_CODEPATH . '/duorou-web',
-    'duorou-service\\' => PANDA_CODEPATH . '/duorou-service',
+    'app\\' => PANDA_CODEPATH . '/duorou_web',
+    'duorou_service\\' => PANDA_CODEPATH . '/duorou_service',
     'panda\\' => PANDA_CODEPATH . '/system'
 );
 
 $G_CONFIG_DIR = array(
     PANDA_CODEPATH . '/system/config',
-    PANDA_CODEPATH . '/duorou-service/config',
-    PANDA_CODEPATH . '/duorou-web/config',
-    PANDA_CODEPATH . '/config/duorou-service',
-    PANDA_CODEPATH . '/config/duorou-web'
+    PANDA_CODEPATH . '/duorou_service/config',
+    PANDA_CODEPATH . '/duorou_web/config',
+    PANDA_CODEPATH . '/config/duorou_service',
+    PANDA_CODEPATH . '/config/duorou_web'
 );
 
 $G_PAGE_DIR = array(
-    PANDA_PAGEPATH . '/duorou-web',
+    PANDA_PAGEPATH . '/duorou_web',
     PANDA_PAGEPATH . '/system'
 );
 

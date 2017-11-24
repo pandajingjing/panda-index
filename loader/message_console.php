@@ -2,17 +2,17 @@
 namespace PandaIndex;
 
 $G_APP_DIR = array(
-    'app\\' => PANDA_CODEPATH . '/message-console',
-    'message-service\\' => PANDA_CODEPATH . '/message-service',
+    'app\\' => PANDA_CODEPATH . '/message_console',
+    'message_service\\' => PANDA_CODEPATH . '/message_service',
     'system\\' => PANDA_CODEPATH . '/system'
 );
 
 $G_CONFIG_DIR = array(
     PANDA_CODEPATH . '/system/config',
-    PANDA_CODEPATH . '/message-service/config',
-    PANDA_CODEPATH . '/message-console/config',
-    PANDA_CODEPATH . '/config/message-service',
-    PANDA_CODEPATH . '/config/message-console'
+    PANDA_CODEPATH . '/message_service/config',
+    PANDA_CODEPATH . '/message_console/config',
+    PANDA_CODEPATH . '/config/message_service',
+    PANDA_CODEPATH . '/config/message_console'
 );
 
 include PANDA_CODEPATH . '/system/bin.php';

@@ -2,20 +2,20 @@
 namespace PandaIndex;
 
 $G_APP_DIR = array(
-    'app\\' => PANDA_CODEPATH . '/file-web',
-    'file-service\\' => PANDA_CODEPATH . '/file-service',
-    'storage-service\\' => PANDA_CODEPATH . '/storage-service',
+    'app\\' => PANDA_CODEPATH . '/file_web',
+    'file_service\\' => PANDA_CODEPATH . '/file_service',
+    'storage_service\\' => PANDA_CODEPATH . '/storage_service',
     'panda\\' => PANDA_CODEPATH . '/system'
 );
 
 $G_CONFIG_DIR = array(
     PANDA_CODEPATH . '/system/config',
-    PANDA_CODEPATH . '/storage-service/config',
-    PANDA_CODEPATH . '/file-service/config',
-    PANDA_CODEPATH . '/file-web/config',
-    PANDA_CODEPATH . '/config/storage-service',
-    PANDA_CODEPATH . '/config/file-service',
-    PANDA_CODEPATH . '/config/file-web'
+    PANDA_CODEPATH . '/storage_service/config',
+    PANDA_CODEPATH . '/file_service/config',
+    PANDA_CODEPATH . '/file_web/config',
+    PANDA_CODEPATH . '/config/storage_service',
+    PANDA_CODEPATH . '/config/file_service',
+    PANDA_CODEPATH . '/config/file_web'
 );
 
 $G_PAGE_DIR = array(

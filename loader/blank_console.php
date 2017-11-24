@@ -2,17 +2,17 @@
 namespace PandaIndex;
 
 $G_APP_DIR = array(
-    'app\\' => PANDA_CODEPATH . '/blank-console',
-    'blank-service\\' => PANDA_CODEPATH . '/blank-service',
+    'app\\' => PANDA_CODEPATH . '/blank_console',
+    'blank_service\\' => PANDA_CODEPATH . '/blank_service',
     'panda\\' => PANDA_CODEPATH . '/system'
 );
 
 $G_CONFIG_DIR = array(
     PANDA_CODEPATH . '/system/config',
-    PANDA_CODEPATH . '/blank-service/config',
-    PANDA_CODEPATH . '/blank-console/config',
-    PANDA_CODEPATH . '/config/blank-service',
-    PANDA_CODEPATH . '/config/blank-console'
+    PANDA_CODEPATH . '/blank_service/config',
+    PANDA_CODEPATH . '/blank_console/config',
+    PANDA_CODEPATH . '/config/blank_service',
+    PANDA_CODEPATH . '/config/blank_console'
 );
 
 include PANDA_CODEPATH . '/system/bin.php';
