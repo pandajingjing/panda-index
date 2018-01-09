@@ -20,7 +20,11 @@ $G_CONFIG_DIR = array(
     PANDA_CODEPATH . '/config/member_service',
     PANDA_CODEPATH . '/config/api_service',
     PANDA_CODEPATH . '/config/member_api',
-    PANDA_CODEPATH . '/config/api_web'
+    PANDA_CODEPATH . '/config/api_web',
+    PANDA_BASEPATH . '/index/config/member_service',
+    PANDA_BASEPATH . '/index/config/api_service',
+    PANDA_BASEPATH . '/index/config/member_api',
+    PANDA_BASEPATH . '/index/config/api_web'
 );
 
 $G_PAGE_DIR = array(

@@ -9,7 +9,8 @@ $G_APP_DIR = array(
 $G_CONFIG_DIR = array(
     PANDA_CODEPATH . '/system/config',
     PANDA_CODEPATH . '/blank_service/config',
-    PANDA_CODEPATH . '/config/blank_service'
+    PANDA_CODEPATH . '/config/blank_service',
+    PANDA_BASEPATH . '/index/config/blank_service'
 );
 
 $G_PAGE_DIR = array(

@@ -15,7 +15,10 @@ $G_CONFIG_DIR = array(
     PANDA_CODEPATH . '/file_web/config',
     PANDA_CODEPATH . '/config/storage_service',
     PANDA_CODEPATH . '/config/file_service',
-    PANDA_CODEPATH . '/config/file_web'
+    PANDA_CODEPATH . '/config/file_web',
+    PANDA_BASEPATH . '/index/config/storage_service',
+    PANDA_BASEPATH . '/index/config/file_service',
+    PANDA_BASEPATH . '/index/config/file_web',
 );
 
 $G_PAGE_DIR = array(

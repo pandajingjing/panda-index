@@ -15,7 +15,10 @@ $G_CONFIG_DIR = array(
     PANDA_CODEPATH . '/duorou_manage/config',
     PANDA_CODEPATH . '/config/member_service',
     PANDA_CODEPATH . '/config/duorou_service',
-    PANDA_CODEPATH . '/config/duorou_manage'
+    PANDA_CODEPATH . '/config/duorou_manage',
+    PANDA_BASEPATH . '/index/config/member_service',
+    PANDA_BASEPATH . '/index/config/duorou_service',
+    PANDA_BASEPATH . '/index/config/duorou_manage'
 );
 
 $G_PAGE_DIR = array(
