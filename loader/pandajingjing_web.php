@@ -6,12 +6,20 @@ $G_APP_DIR = array(
     'panda\\' => PANDA_CODEPATH . '/system'
 );
 
-$G_CONFIG_DIR = array(
-    PANDA_CODEPATH . '/system/config',
-    PANDA_CODEPATH . '/pandajingjing_web/config',
-    PANDA_CODEPATH . '/config/pandajingjing_web',
-    PANDA_BASEPATH . '/index/config/pandajingjing_web'
-);
+if (PANDA_ENV_NAME == PANDA_ENV_RELEASE) {
+    $G_CONFIG_DIR = array(
+        PANDA_CODEPATH . '/system/config',
+        PANDA_CODEPATH . '/pandajingjing_web/config',
+        PANDA_CODEPATH . '/config/pandajingjing_web',
+        PANDA_BASEPATH . '/index/config/pandajingjing_web'
+    );
+} else {
+    $G_CONFIG_DIR = array(
+        PANDA_CODEPATH . '/system/config',
+        PANDA_CODEPATH . '/pandajingjing_web/config',
+        PANDA_CODEPATH . '/config/pandajingjing_web'
+    );
+}
 
 $G_PAGE_DIR = array(
     PANDA_PAGEPATH . '/pandajingjing_web',

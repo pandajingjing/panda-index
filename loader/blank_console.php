@@ -7,15 +7,25 @@ $G_APP_DIR = array(
     'panda\\' => PANDA_CODEPATH . '/system'
 );
 
-$G_CONFIG_DIR = array(
-    PANDA_CODEPATH . '/system/config',
-    PANDA_CODEPATH . '/blank_service/config',
-    PANDA_CODEPATH . '/blank_console/config',
-    PANDA_CODEPATH . '/config/blank_service',
-    PANDA_CODEPATH . '/config/blank_console',
-    PANDA_BASEPATH . '/index/config/blank_service',
-    PANDA_BASEPATH . '/index/config/blank_console'
-);
+if (PANDA_ENV_NAME == PANDA_ENV_RELEASE) {
+    $G_CONFIG_DIR = array(
+        PANDA_CODEPATH . '/system/config',
+        PANDA_CODEPATH . '/blank_service/config',
+        PANDA_CODEPATH . '/blank_console/config',
+        PANDA_CODEPATH . '/config/blank_service',
+        PANDA_CODEPATH . '/config/blank_console',
+        PANDA_BASEPATH . '/index/config/blank_service',
+        PANDA_BASEPATH . '/index/config/blank_console'
+    );
+} else {
+    $G_CONFIG_DIR = array(
+        PANDA_CODEPATH . '/system/config',
+        PANDA_CODEPATH . '/blank_service/config',
+        PANDA_CODEPATH . '/blank_console/config',
+        PANDA_CODEPATH . '/config/blank_service',
+        PANDA_CODEPATH . '/config/blank_console'
+    );
+}
 
 include PANDA_CODEPATH . '/system/bin.php';
 bin_cmd();
