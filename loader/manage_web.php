@@ -54,7 +54,9 @@ if (PANDA_ENV_NAME == PANDA_ENV_RELEASE) {
 }
 
 $G_PAGE_DIR = array(
+    PANDA_PAGEPATH . '/manage_web',
     PANDA_PAGEPATH . '/duorou_manage',
+    PANDA_PAGEPATH . '/member_manage',
     PANDA_PAGEPATH . '/system'
 );
 
