@@ -2,6 +2,7 @@
 // ./launcher_dev.sh uri loader codever
 namespace PandaIndex;
 
+define('PANDA_STARTTIME', microtime(true));
 define('PANDA_BASEPATH', '/data/app');
 include PANDA_BASEPATH . '/index/inc/func.inc.php';
 
